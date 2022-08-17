@@ -9,5 +9,5 @@ describe("Test login credentials", () => {
   it("should login with valid credentiales", () => {
     cy.login("standard_user", "secret_sauce");
     cy.verifyUrl("https://www.saucedemo.com/inventory.html");
-  });
+ });
 });
