@@ -8,8 +8,7 @@ on:
 
 jobs:
   Cypress-run-tests:
-    matrix:
-      os: [ubuntu-latest, windows-latest]
+    runs-on: [windows-2022, ubuntu-latest]
     steps:
       - uses: actions/checkout@v3
 
