@@ -6,7 +6,7 @@ describe("verify shopping cart its working correctly", () => {
   });
 
   it("will add a product to shopping cart", () => {
-    cy.addProductToCart();
+    cy.addProductToCart(0);
     cy.goToShoppingCart();
   });
 });

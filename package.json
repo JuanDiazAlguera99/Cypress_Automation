@@ -4,11 +4,17 @@
   "description": "Cypress_Github_Actions",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "cleanreport": "rmdir /q /s cypress\\report\\ || VER>NUL",
+    "cleanscreenshots": "rmdir /q /s cypress\\screenshots\\ || VER>NUL",
+    "test": "--reporter mochawesome --browser chrome",
+    "mergejson": "npx mochawesome-merge cypress/report/mochawesome-report/*.json > cypress/report/output.json",
+    "html": "npx marge cypress/report/output.json --reportDir ./ --inline",
+    "report": "npm run mergejson && npm run html",
+    "testreport": "npm run cleanreport && npm run cleanscreenshots && npx cypress run test & npm run report"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "cypress": "^10.5.0"
+  "devDependencies": {
+    "cypress": "^10.6.0",
+    "mochawesome": "^7.1.3",
+    "mochawesome-merge": "^4.2.1"
   }
 }
