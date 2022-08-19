@@ -7,8 +7,8 @@ on:
       - QA
 
 jobs:
-  Cypress-v10-run-tests:
-    runs-on: windows-2022
+  Cypress-run-tests:
+    runs-on: windows-latest && ubuntu-latest
     steps:
       - uses: actions/checkout@v3
 
