@@ -17,10 +17,7 @@
 import "./commands";
 import "./login";
 import "./mainPage";
-<<<<<<< HEAD
-=======
 import "./shoppingCart";
->>>>>>> qa
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')

@@ -6,11 +6,11 @@
   "scripts": {
     "cleanreport": "rmdir /q /s cypress\\report\\ || VER>NUL",
     "cleanscreenshots": "rmdir /q /s cypress\\screenshots\\ || VER>NUL",
-    "test": "--reporter mochawesome --browser chrome",
+    "test": "npx cypress run --reporter mochawesome",
     "mergejson": "npx mochawesome-merge cypress/report/mochawesome-report/*.json > cypress/report/output.json",
     "html": "npx marge cypress/report/output.json --reportDir ./ --inline",
     "report": "npm run mergejson && npm run html",
-    "testreport": "npm run cleanreport && npm run cleanscreenshots && npx cypress run test & npm run report"
+    "testreport": "npm run cleanreport && npm run cleanscreenshots && npm run test & npm run report"
   },
   "devDependencies": {
     "cypress": "^10.6.0",
