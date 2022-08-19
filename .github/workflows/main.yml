@@ -16,11 +16,10 @@ jobs:
       - name: Use Node.js V16
         uses: actions/setup-node@v3
         with:
-          node-version: "16.14.2"
+          node-version: "16.16.0"
 
       # install and Run Cypress
       - name: Running cypress V10
-        id: runningcypress
         uses: cypress-io/github-action@v4
         with:
           config-file: cypress.config.js
