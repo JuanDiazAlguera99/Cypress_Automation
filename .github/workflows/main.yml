@@ -1,24 +1,28 @@
 name: Cypress Tests
 
-on: [push]
+on:
+  push:
+    branches:
+      - main
+      - QA
 
 jobs:
-  cypress-run:
+  Cypress-v10-run-tests:
     runs-on: windows-2022
     steps:
-      - name: Checkout
-        uses: actions/setup-node@v3
-      # Install NPM dependencies, cache them correctly
-      # and run all Cypress tests
-      - name: Use Node.js V16
-           uses: actions/setup-node@v3
-           with:
-              node-version: "16.14.2"
+      - uses: actions/checkout@v3
 
-      - name: Cypress run
+      # install a specific version of Node using
+      - name: Use Node.js V16
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16.14.2"
+
+      # install and Run Cypress
+      - name: Running cypress V10
+        id: runningcypress
         uses: cypress-io/github-action@v4
-           with:
-              config-file: cypress.config.js
-              browser: chrome
-              headed: true
-          start: npm run test
+        with:
+          config-file: cypress.config.js
+          browser: chrome
+          headed: true
