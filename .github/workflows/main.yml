@@ -22,7 +22,7 @@ jobs:
       - name: Use Node.js V16
         uses: actions/setup-node@v3
         with:
-          node-version: ${{ matrix.python-version }}
+          node-version: ${{ matrix.node-version }}
 
       # install and Run Cypress
       - name: Running cypress V10
