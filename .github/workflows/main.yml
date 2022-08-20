@@ -8,7 +8,7 @@ on:
 
 jobs:
   Cypress-run-tests:
-    runs-on: [windows-2022, ubuntu-20.04]
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v3
 
