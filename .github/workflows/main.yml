@@ -25,7 +25,6 @@ jobs:
         with:
           config-file: cypress.config.js
           browser: chrome
-          headed: true ,
 
           Cypress-v10-run-tests-ubuntu:
     runs-on: ubuntu-latest
