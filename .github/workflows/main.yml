@@ -10,9 +10,8 @@ on:
      - main
 
 jobs:
-
-          Cypress-run-tests-ubuntu:
-    runs-on: ubuntu-latest
+   Cypress-run-tests-windows:
+    runs-on: windows-latest
     steps:
       - uses: actions/checkout@v3
 
@@ -29,3 +28,4 @@ jobs:
           config-file: cypress.config.js
           browser: chrome
           headed: true
+
