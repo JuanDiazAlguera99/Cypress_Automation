@@ -11,7 +11,7 @@ on:
 
 jobs:
   Cypress-v10-run-tests-windows:
-    runs-on: [ubuntu-latest, windows-latest]
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
 
