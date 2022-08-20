@@ -30,9 +30,9 @@ jobs:
           browser: chrome
           headed: true
 
-  Cypress-v10-run-tests-windows:
-    runs-on: ubuntu-latest
-    steps:
+  Cypress-v10-run-tests-ubuntu:
+     runs-on: ubuntu-latest
+     steps:
       - uses: actions/checkout@v3
 
       # install a specific version of Node using
