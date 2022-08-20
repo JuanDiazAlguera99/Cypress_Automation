@@ -27,7 +27,7 @@ jobs:
         uses: cypress-io/github-action@v4
         with:
           config-file: cypress.config.js
-          browser: chrome
+          browser: edge
           headed: true
 
   Cypress-v10-run-tests-ubuntu:
@@ -67,7 +67,7 @@ jobs:
         uses: cypress-io/github-action@v4
         with:
           config-file: cypress.config.js
-          browser: safari
+          browser: firefox
           headed: true
           
 
