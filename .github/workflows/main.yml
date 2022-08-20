@@ -13,7 +13,7 @@ jobs:
   Cypress-v10-run-tests-windows:
     runs-on: ${{ matrix.os }}
     matrix:
-        os: [ubuntu-latest, macOS-latest, windows-latest]
+        os: [ubuntu-latest, windows-latest]
     steps:
       - uses: actions/checkout@v3
 
