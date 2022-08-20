@@ -5,6 +5,9 @@ on:
     branches:
       - main
       - QA
+      pull_request:
+    branches: 
+    - main
 
 jobs:
   Cypress-v10-run-tests-windows:
