@@ -45,5 +45,5 @@ jobs:
         uses: cypress-io/github-action@v4
         with:
           config-file: cypress.config.js
-          browser: firefox
+          browser: chrome
           headed: true
