@@ -50,7 +50,7 @@ jobs:
           browser: chrome
           headed: true
 
-            Cypress-v10-run-tests-macOS:
+  Cypress-v10-run-tests-macOS:
      runs-on: macOS-latest
      steps:
       - uses: actions/checkout@v3
