@@ -29,7 +29,6 @@ jobs:
           config-file: cypress.config.js
           browser: edge
           headed: true
-          start: npm run report
 
   Cypress-v10-run-tests-ubuntu:
     runs-on: ubuntu-latest
