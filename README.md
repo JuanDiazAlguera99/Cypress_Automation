@@ -25,7 +25,9 @@ npm run testreport   // Run tests with Cypress in headless mode with reports
 
 ### Reporter on local machine
 
-> After run npm run testreport go to /report folder and open index.html file
+```
+After run npm run testreport go to /report folder and open index.html file
+```
 
 ### License
 
