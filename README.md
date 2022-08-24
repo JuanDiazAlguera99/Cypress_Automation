@@ -8,7 +8,7 @@
 
 This project test automation framework for www.saucedemo.com. SauceDemo is a sample website built by SauceLabs that allows users to practice browser automation.
 
-# Installation
+## Installation
 
 > Use the package manager npm nodejs to install the framework and dependencies
 
@@ -23,7 +23,7 @@ npm i
 npm run testreport   // Run tests with Cypress in headless mode with reports
 ```
 
-### Reporter on local machine
+## Reporter on local machine
 
 ```
 After run npm run testreport go to /report folder and open index.html file
