@@ -6,8 +6,8 @@ on:
       - main
       - QA
   pull_request:
-    branches: 
-     - main
+    branches:
+      - main
 
 jobs:
   Cypress-v10-run-tests-windows:
@@ -31,8 +31,8 @@ jobs:
           headed: true
 
   Cypress-v10-run-tests-ubuntu:
-     runs-on: ubuntu-latest
-     steps:
+    runs-on: ubuntu-latest
+    steps:
       - uses: actions/checkout@v3
 
       # install a specific version of Node using
@@ -51,8 +51,8 @@ jobs:
           headed: true
 
   Cypress-v10-run-tests-macOS:
-     runs-on: macOS-latest
-     steps:
+    runs-on: macOS-latest
+    steps:
       - uses: actions/checkout@v3
 
       # install a specific version of Node using
@@ -69,7 +69,3 @@ jobs:
           config-file: cypress.config.js
           browser: firefox
           headed: true
-          
-
-       
-
