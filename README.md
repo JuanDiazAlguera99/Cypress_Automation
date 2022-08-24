@@ -33,6 +33,6 @@ After run npm run testreport go to /report folder and open index.html file
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-This project is licensed under the terms of the [MIT license](/LICENSE).
+> This project is licensed under the terms of the [MIT license](/LICENSE).
 
 [![Cypress.io](https://img.shields.io/badge/Tested%20with-Cypress-04C38E.svg)](https://www.cypress.io/)
