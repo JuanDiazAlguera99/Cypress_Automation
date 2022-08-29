@@ -20,7 +20,7 @@ npm i
 ## How to use it
 
 ```
-npm run testreport   // Run tests with Cypress in headless mode with reports
+npm run test-report   // Run tests with Cypress in headless mode with reports
 ```
 
 ## Reporter on local machine
