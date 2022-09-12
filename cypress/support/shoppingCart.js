@@ -9,10 +9,22 @@ const inventory_item_name = ".inventory_item_name";
 const finish_button = '[data-test="finish"]';
 const finish_tittle = ".title";
 const back_home_button = '[data-test="back-to-products"]';
+const shopping_cart_item = ".cart_item";
 
 Cypress.Commands.add("addProductToCart", (number) => {
   cy.get(add_to_cart_button).eq(number).click();
   cy.scrollTo(1000, 0);
+});
+
+Cypress.Commands.add("addProductsToCart", (number) => {
+  for (let i = 0; i < number; i++) {
+    cy.get(add_to_cart_button).eq(i).click();
+    cy.scrollTo(1000, 0);
+  }
+});
+
+Cypress.Commands.add("validatenumberOfProducts", (number) => {
+  cy.get(shopping_cart_item).eq(number);
 });
 
 Cypress.Commands.add("goToShoppingCart", () => {
