@@ -14,7 +14,7 @@ Cypress.Commands.add("shouldBeVisible", (selector) => {
   cy.get(selector).should("be.visible");
 });
 
-Cypress.Commands.add("shouldNotExit", (selector) => {
+Cypress.Commands.add("shouldNotExist", (selector) => {
   cy.get(selector).should("not.exist");
 });
 

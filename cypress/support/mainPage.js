@@ -1,1 +1,1 @@
-const Url = "https://www.saucedemo.com/inventory.html";
+const shopping_cart_button = ".shopping_cart_link";
