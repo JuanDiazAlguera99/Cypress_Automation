@@ -16,6 +16,7 @@ Cypress.Commands.add("addProductToCart", (number) => {
   cy.scrollTo(1000, 0);
 });
 
+
 Cypress.Commands.add("addProductsToCart", (numberOfProdcuts) => {
   for (let i = 0; i < numberOfProdcuts; i++) {
     cy.get(addToCartButton).eq(i).click();
