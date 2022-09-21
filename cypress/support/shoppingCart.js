@@ -16,7 +16,6 @@ Cypress.Commands.add("addProductToCart", (number) => {
   cy.scrollTo(1000, 0);
 });
 
-
 Cypress.Commands.add("addProductsToCart", (numberOfProdcuts) => {
   for (let i = 0; i < numberOfProdcuts; i++) {
     cy.get(addToCartButton).eq(i).click();
@@ -39,7 +38,6 @@ Cypress.Commands.add("buyProduct", () => {
   cy.typeMessage(lastNameField, "diaz");
   cy.typeMessage(postalCodeField, "1305");
   cy.clickButton(continueButton);
-  //cy.validateText(inventoryItemName, "Sauce Labs Backpack");
   cy.clickButton(finishButton);
   cy.validateText(finishTittle, "Checkout: Complete!");
   cy.clickButton(backHomeButton);
