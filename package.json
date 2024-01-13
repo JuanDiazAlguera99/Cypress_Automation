@@ -7,11 +7,13 @@
     "cleanreport": "rmdir /q /s cypress\\report\\ || VER>NUL",
     "cleanscreenshots": "rmdir /q /s cypress\\screenshots\\ || VER>NUL",
     "cleanvideos": "rmdir /q /s cypress\\videos || VER>NUL",
-    "test": "npx cypress run --reporter mochawesome --config video=false --browser chrome",
+    "test": "npx cypress run --reporter mochawesome --config video=false --headed --browser chrome",
+    "test-headless": "npx cypress run --reporter mochawesome --config video=false --browser chrome",
     "mergejson": "npx mochawesome-merge cypress/report/mochawesome-report/*.json > cypress/report/output.json",
     "html": "npx marge cypress/report/output.json --reportDir ./ --inline",
     "report": "npm run mergejson && npm run html",
-    "test-report": "npm run cleanreport && npm run cleanscreenshots && npm run cleanvideos && npm run test & npm run report"
+    "test-report": "npm run cleanreport && npm run cleanscreenshots && npm run cleanvideos && npm run test & npm run report",
+    "test-report-headless": "npm run cleanreport && npm run cleanscreenshots && npm run cleanvideos && npm run test-headless & npm run report"
   },
   "devDependencies": {
     "cypress": "^10.6.0",
